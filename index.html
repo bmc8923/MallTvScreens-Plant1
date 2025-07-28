@@ -17,7 +17,7 @@
     }
 
     iframe {
-      height: 700vh; /* Your full Appsmith page height */
+      height: 700vh; /* Full Appsmith app height */
       width: 100%;
       border: none;
       position: absolute;
@@ -30,7 +30,7 @@
         top: 0;
       }
       50% {
-        top: -625vh; /* scroll full page + ¼ screen height */
+        top: -625vh; /* Scroll to full height + ¼ page */
       }
       100% {
         top: 0;
@@ -41,7 +41,10 @@
 <body>
 
 <div class="scroll-frame">
-  <iframe src="https://app.appsmith.com/app/monthly-line-move-dashboard-autoscroll-plant-1/page1-6887a115d8c05b5febb3005d"></iframe>
+  <iframe 
+    src="https://app.appsmith.com/app/monthly-line-move-dashboard-autoscroll-plant-1/page1-6887a115d8c05b5febb3005d"
+    loading="lazy"
+  ></iframe>
 </div>
 
 </body>
