@@ -22,18 +22,21 @@
       border: none;
       position: absolute;
       top: 0;
-      animation: scrollIframe 150s linear infinite;
+      animation: scrollIframe 90s linear infinite;
     }
 
     @keyframes scrollIframe {
       0% {
         top: 0;
       }
-      50% {
-        top: -775vh; /* Scroll to full height + ¼ page */
+      80% {
+        top: -775vh; /* Scroll down */
+      }
+      81% {
+        top: 0;      /* Snap to top instantly */
       }
       100% {
-        top: 0;
+        top: 0;      /* Hold at top briefly */
       }
     }
   </style>
